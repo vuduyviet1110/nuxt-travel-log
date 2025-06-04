@@ -6,7 +6,14 @@ export default defineNuxtConfig({
     port: 3154,
     host: "0.0.0.0",
   },
-  modules: ["@nuxt/eslint"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@nuxt/eslint",
+    "@nuxt/icon",
+  ],
+  css: [
+    "~/assets/css/main.css",
+  ],
   eslint: {
     config: {
       standalone: false,
